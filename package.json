@@ -1,5 +1,6 @@
 {
   "name": "tic-tac-toe",
+  "decription": "Tic-tac-toe game for CareerNinja Assignment",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
