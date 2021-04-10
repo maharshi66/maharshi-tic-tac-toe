@@ -17,8 +17,12 @@ const LandingPage = ({history}) => {
     }
 
     return (
-        <Container className='div-center justify-content-center'>
-            <Row className='pb-3' xs={12} md={12}>
+
+        <Container
+        data-aos="flip-left"
+        data-aos-delay="600"
+        className='div-center justify-content-center'>
+            <Row className='pb-2' xs={12} md={12}>
                 <Col>
                     <XMark />
                 </Col>
@@ -57,6 +61,9 @@ const LandingPage = ({history}) => {
                     <Button className='rounded-pill' onClick={handleClick} variant='outline-success'>
                         Continue
                     </Button>                    
+            </Row>
+            <Row className='py-3'xs={1} md={1}>
+                <button className='settings-btn'><i className='fas fa-cog' /></button>
             </Row>
         </Container>
     )

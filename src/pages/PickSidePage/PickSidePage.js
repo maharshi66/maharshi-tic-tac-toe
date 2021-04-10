@@ -17,7 +17,10 @@ const PickSidePage = ({history}) => {
     }
     
     return (
-        <Container className='div-center justify-content-center'>
+        <Container 
+            data-aos="flip-left"
+            data-aos-delay="600"
+            className='div-center justify-content-center'>
         
         <Row xs={1} md={1} className='pb-4'>
             <h7>

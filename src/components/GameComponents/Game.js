@@ -106,15 +106,14 @@ const Game = ({history, match}) => {
       <div>
           <Board blocks={playHistory[stepNumber]} onClick={handleClick} />
       </div>
-      <div className='info-wrapper mt-3'>
-        <Button className='btn-lg mr-4' variant='primary' onClick={handleReset}>
-            Reset
+      <div className='info-wrapper mt-5'>
+        <Button className='btn-md mr-4' variant='primary' onClick={handleReset}>
+          <i className='fas fa-sync-alt'></i> Reset
         </Button>
-        <Button className='btn-lg' variant='outline-danger' onClick={handleQuit}>
-          Quit
+        <Button className='btn-md' variant='outline-danger' onClick={handleQuit}>
+          <i className='fas fa-times'></i> Quit
         </Button>
       </div>
-
       </>
     );
   };
