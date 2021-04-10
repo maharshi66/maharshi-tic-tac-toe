@@ -19,8 +19,6 @@ const Game = ({history, match}) => {
       }
     ];
 
-    console.log(playerData[0].mark);
-    console.log(playerData[1].mark);
     const [playHistory, setHistory] = useState([Array(9).fill(null)]);
     const [stepNumber, setStepNumber] = useState(0);
     const [xIsNext, setXisNext] = useState(playerData[0].mark === 'X' ? false : true);    

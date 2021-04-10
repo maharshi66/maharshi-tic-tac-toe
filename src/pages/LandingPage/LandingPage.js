@@ -12,7 +12,6 @@ const LandingPage = ({history}) => {
     ];
 
     const handleClick = () => {
-        console.log('Continue clicked');
         history.push('/pick-side');
     }
 
@@ -33,7 +32,7 @@ const LandingPage = ({history}) => {
             <br />
             <Row xs={1} md={1} className='pb-3'>
                 <h7>
-                    Choose Your Playing Mode
+                    Choose Playing Mode
                 </h7>
             </Row>
             <Row xs={1} md={1}>
@@ -58,7 +57,10 @@ const LandingPage = ({history}) => {
             
             <br />
             <Row xs={1} md={1}>
-                    <Button className='rounded-pill' onClick={handleClick} variant='outline-success'>
+                    <Button 
+                        className='rounded-pill' 
+                        onClick={handleClick} 
+                        variant='outline-success'>
                         Continue
                     </Button>                    
             </Row>

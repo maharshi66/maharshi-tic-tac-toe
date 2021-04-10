@@ -12,7 +12,6 @@ const PickSidePage = ({history}) => {
     ];
 
     const handleClick = () => {
-        console.log('Side Picked');
         history.push(`/play/${sidePicked}`);
     }
     
