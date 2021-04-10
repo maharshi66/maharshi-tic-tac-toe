@@ -1,0 +1,48 @@
+.game-body {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.board {
+  width: 320px;
+  height: 320px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.blocks {
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.X {
+  color: blue;
+}
+.O {
+  color: orangered;
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.moves-list {
+  list-style: none;
+}
+
+.round-corner {
+  border-radius: 25px;
+  background: lightgray;
+}
+
+.current-player {
+  text-decoration: none;
+  border-width: 0 0 5px;
+  border-style: solid;
+  border-color: lightgreen;
+}

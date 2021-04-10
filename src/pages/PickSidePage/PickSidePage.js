@@ -6,15 +6,15 @@ import './PickSidePage.css';
 
 const PickSidePage = ({history}) => {
 
-    const [sidePicked, setSidePicked] = useState('1');
+    const [sidePicked, setSidePicked] = useState('0');
     const sides = [
-        { name: 'X', value: '1' },
-        { name: 'O', value: '2' },
+        { name: 'X', value: '0' },
+        { name: 'O', value: '1' },
     ];
 
     const handleClick = () => {
         console.log('Side Picked');
-        history.push('/play');
+        history.push(`/play/${sidePicked}`);
     }
     
     return (

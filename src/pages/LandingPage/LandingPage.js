@@ -53,8 +53,6 @@ const LandingPage = ({history}) => {
             </Row>
             
             <br />
-            <br />
-
             <Row xs={1} md={1}>
                     <Button className='rounded-pill' onClick={handleClick} variant='outline-success'>
                         Continue
