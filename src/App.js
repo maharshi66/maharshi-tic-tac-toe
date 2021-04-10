@@ -11,7 +11,7 @@ function App() {
     <Router>      
       <Route exact path='/' component={LandingPage} />
       <Route  path='/pick-side' component={PickSidePage} />
-      <Route path='/play' component={PlayGamePage} />
+      <Route path='/play/:id' component={PlayGamePage} />
       <Footer />
     </Router>
   );

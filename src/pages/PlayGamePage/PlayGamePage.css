@@ -1,7 +1,7 @@
 .game-body {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .board {
@@ -20,19 +20,15 @@
 }
 
 .X {
-  color: blue;
+  color: #0c0cf9;
 }
 .O {
-  color: orangered;
+  color: #ff8118;
 }
 
 .info-wrapper {
   display: flex;
   justify-content: center;
-}
-
-.moves-list {
-  list-style: none;
 }
 
 .round-corner {
@@ -45,4 +41,10 @@
   border-width: 0 0 5px;
   border-style: solid;
   border-color: lightgreen;
+}
+
+.winner-alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

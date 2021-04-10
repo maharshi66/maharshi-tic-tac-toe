@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import XMark from '../../components/Marks/XMark';
 import OMark from '../../components/Marks/OMark';
 import { ButtonGroup, ToggleButton, Button, Row, Col, Container} from 'react-bootstrap';
-import './PickSidePage.css';
 
 const PickSidePage = ({history}) => {
 
