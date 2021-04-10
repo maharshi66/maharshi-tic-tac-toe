@@ -22,9 +22,9 @@ const PickSidePage = ({history}) => {
             className='div-center justify-content-center'>
         
         <Row xs={1} md={1} className='pb-4'>
-            <h7>
+            <h6>
                 Pick Your Side
-            </h7>
+            </h6>
         </Row>
         
         <Row className='shadow pb-3' xs={12} md={12}>

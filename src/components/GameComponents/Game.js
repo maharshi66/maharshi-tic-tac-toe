@@ -7,7 +7,6 @@ import { withRouter } from 'react-router-dom';
 
 const Game = ({history, match}) => {  
     
-    console.log(parseInt(match.params.id));
     const playerData = [ 
       {
         name: 'You',

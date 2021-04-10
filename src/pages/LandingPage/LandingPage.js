@@ -31,9 +31,9 @@ const LandingPage = ({history}) => {
             </Row>
             <br />
             <Row xs={1} md={1} className='pb-3'>
-                <h7>
+                <h6>
                     Choose Playing Mode
-                </h7>
+                </h6>
             </Row>
             <Row xs={1} md={1}>
                 <ButtonGroup toggle>
