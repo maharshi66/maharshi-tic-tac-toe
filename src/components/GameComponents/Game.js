@@ -85,9 +85,9 @@ const Game = ({history, match}) => {
     return (
       <>
       <div>
-          {winner ? <Alert 
-            className='winner-alert mt-3 mt-md-2 mx-4 mx-md-5 text-center' 
-            transition 
+          {winner ? <Alert
+            data-autoSave='fade-in' 
+            className='winner-alert mt-3 mt-md-2 mx-4 mx-md-5 text-center'
             variant='success'>{ winner + " won!"}
             </Alert> 
           : null}                  

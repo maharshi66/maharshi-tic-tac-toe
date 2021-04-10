@@ -18,7 +18,7 @@ const PickSidePage = ({history}) => {
     
     return (
         <Container 
-            data-aos="flip-left"
+            data-aos="fade-left"
             data-aos-delay="600"
             className='div-center justify-content-center'>
         
@@ -28,7 +28,7 @@ const PickSidePage = ({history}) => {
             </h7>
         </Row>
         
-        <Row className='pb-3' xs={12} md={12}>
+        <Row className='shadow pb-3' xs={12} md={12}>
             <Col>
                 <XMark />
             </Col>
@@ -36,7 +36,7 @@ const PickSidePage = ({history}) => {
                 <OMark />
             </Col>
         </Row>
-        
+        <br />
         <Row xs={1} md={1}>
                 <ButtonGroup toggle>
                 {

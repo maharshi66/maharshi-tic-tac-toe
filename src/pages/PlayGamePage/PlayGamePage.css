@@ -10,11 +10,13 @@
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   gap: 1rem;
+  background: lightgray;
 }
 
 .blocks {
   border: none;
   font-size: 3rem;
+  font-weight: bold;
   cursor: pointer;
   outline: none;
 }
@@ -34,17 +36,22 @@
 .round-corner {
   border-radius: 25px;
   background: lightgray;
+  border-style: dashed;
+  border-color: black;
 }
 
 .current-player {
   text-decoration: none;
-  border-width: 0 0 5px;
+  border-width: 5px 0 0;
   border-style: solid;
-  border-color: lightgreen;
+  border-color: lightskyblue;
+  border-radius: 25px;
+  font-weight: bold;
 }
 
 .winner-alert {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
 }

@@ -19,10 +19,10 @@ const LandingPage = ({history}) => {
     return (
 
         <Container
-        data-aos="flip-left"
-        data-aos-delay="600"
+        data-aos="fade-left"
+        data-aos-delay="500"
         className='div-center justify-content-center'>
-            <Row className='pb-2' xs={12} md={12}>
+            <Row className='pb-2 shadow' xs={12} md={12}>
                 <Col>
                     <XMark />
                 </Col>
@@ -63,7 +63,7 @@ const LandingPage = ({history}) => {
                     </Button>                    
             </Row>
             <Row className='py-3'xs={1} md={1}>
-                <button className='settings-btn'><i className='fas fa-cog' /></button>
+                <Button className='rounded settings-btn'><i className='fas fa-cog' /></Button>
             </Row>
         </Container>
     )

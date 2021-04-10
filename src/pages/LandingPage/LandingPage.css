@@ -16,8 +16,15 @@
   border-radius: 50px;
   background: none;
   border-style: none;
-  color: darkgrey;
+  color: darkblue;
   font-size: 30px;
+}
+
+.shadow {
+  border-radius: 25px;
+  padding: 2px 2px;
+  box-shadow: 3px 0px;
+  background: white;
 }
 
 @media screen and (max-width: 960px) {
@@ -26,6 +33,7 @@
     height: 80px;
   }
   .div-center {
+    margin-top: 10rem;
     width: 80%;
     height: 250px;
   }
