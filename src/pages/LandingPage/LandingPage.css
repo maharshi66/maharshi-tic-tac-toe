@@ -1,12 +1,11 @@
-.landing-page {
+.div-center {
   display: block;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
-
 .logo {
   display: flex;
   width: 171px;
@@ -14,13 +13,12 @@
 }
 
 @media screen and (max-width: 960px) {
-  .landing-page {
-    width: 80%;
-    height: 250px;
-  }
-
   .logo {
     width: 60px;
     height: 80px;
+  }
+  .div-center {
+    width: 80%;
+    height: 250px;
   }
 }

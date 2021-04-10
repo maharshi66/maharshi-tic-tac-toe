@@ -1,29 +1,35 @@
 import React, { useState } from 'react'
-import { Button, ButtonGroup, ToggleButton, Row, Col, Container, Image} from 'react-bootstrap';
+import { Button, ButtonGroup, ToggleButton, Row, Col, Container} from 'react-bootstrap';
 import './LandingPage.css';
-import xMark from '../../assets/x-mark.svg';
-import oMark from '../../assets/o-mark.svg';
+import XMark from '../../components/Marks/XMark';
+import OMark from '../../components/Marks/OMark';
 
-const LandingPage = () => {
+const LandingPage = ({history}) => {
     const [playMode, setPlayMode] = useState('1');
     const playingModes = [
         { name: 'With AI', value: '1' },
         { name: 'With A Friend', value: '2' },
     ];
 
+    const handleClick = () => {
+        console.log('Continue clicked');
+        history.push('/pick-side');
+    }
+
     return (
-        <Container className='landing-page justify-content-center'>
+        <Container className='div-center justify-content-center'>
             <Row className='pb-3' xs={12} md={12}>
                 <Col>
-                    <Image fluid src={xMark} alt='xmark' />
+                    <XMark />
                 </Col>
                 <Col>
-                    <Image fluid src={oMark} alt='omark' />
+                    <OMark />
                 </Col>
             </Row>
-            <Row xs={1} md={1}>
+            <br />
+            <Row xs={1} md={1} className='pb-3'>
                 <h7>
-                    Choose Playing Mode
+                    Choose Your Playing Mode
                 </h7>
             </Row>
             <Row xs={1} md={1}>
@@ -45,9 +51,12 @@ const LandingPage = () => {
                 }
                 </ButtonGroup>
             </Row>
+            
             <br />
+            <br />
+
             <Row xs={1} md={1}>
-                    <Button rounded variant='success'>
+                    <Button className='rounded-pill' onClick={handleClick} variant='outline-success'>
                         Continue
                     </Button>                    
             </Row>
