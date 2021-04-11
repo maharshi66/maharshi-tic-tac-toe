@@ -13,16 +13,18 @@
 }
 
 .settings-btn {
-  border-radius: 50px;
-  background: none;
+  border-radius: 40px;
+  background: white;
+  box-shadow: 0px 2px 2px 2px;
   border-style: none;
-  color: darkblue;
+  color: darkgray;
   font-size: 30px;
+  width: 10%;
 }
 
 .shadow {
   border-radius: 25px;
-  padding: 2px 2px;
+  padding: 3px 2px;
   box-shadow: 3px 0px;
   background: white;
 }
@@ -36,5 +38,15 @@
     margin-top: 10rem;
     width: 80%;
     height: 250px;
+  }
+
+  .settings-btn {
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 2px 2px 2px;
+    border-style: none;
+    color: darkgray;
+    font-size: 30px;
+    width: 20%;
   }
 }

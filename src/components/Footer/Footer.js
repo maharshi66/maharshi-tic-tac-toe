@@ -5,8 +5,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             Built by 
-            <a href='https://github.com/maharshi66' target='__blank'> 
-            <h6> Maharshi Shah</h6>
+            <a className='name-text' href='https://github.com/maharshi66' target='__blank'> Maharshi Shah
             </a>
         </div>
     )

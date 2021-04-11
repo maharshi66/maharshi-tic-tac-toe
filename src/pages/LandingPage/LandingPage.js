@@ -64,9 +64,11 @@ const LandingPage = ({history}) => {
                         Continue
                     </Button>                    
             </Row>
-            <Row className='py-3'xs={1} md={1}>
-                <Button className='rounded settings-btn'><i className='fas fa-cog' /></Button>
-            </Row>
+            <div className='py-3 py-md-2 justify-content-center align-items-center'>
+                <button className='settings-btn'>
+                    <i className='fas fa-cog' />
+                </button>
+            </div>
         </Container>
     )
 }

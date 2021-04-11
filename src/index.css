@@ -4,4 +4,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #fcfeff;
+  overflow-y: hidden;
+  /* background: black; */
+}
+
+.particles {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.btn {
+  font-weight: bold;
+  border-width: 2px;
 }
