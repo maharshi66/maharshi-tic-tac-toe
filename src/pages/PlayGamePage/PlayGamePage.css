@@ -65,7 +65,8 @@
 .X {
   font-size: 3rem;
   /* font-family: 'Rubik Mono One', sans-serif; */
-  font-family: 'Fredoka One', cursive;
+  /* font-family: 'Fredoka One', cursive; */
+  font-family: 'Rowdies', cursive;
   background-color: white;
   background-image: linear-gradient(45deg, #5433ff, #20bdff, #2ebf91);
   background-size: 100%;
@@ -79,8 +80,10 @@
   font-size: 3rem;
   background-color: white;
   /* font-family: 'Rubik Mono One', sans-serif; */
-  font-family: 'Fredoka One', cursive;
+  /* font-family: 'Fredoka One', cursive; */
   background-image: linear-gradient(to right, #f37335, #f5af19);
+  font-family: 'Rowdies', cursive;
+
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;

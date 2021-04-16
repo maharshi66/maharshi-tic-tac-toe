@@ -62,10 +62,9 @@
 
 .gradient-text-x {
   font-size: 12rem;
-  padding: 7px 7px;
-  font-family: 'Fredoka One', cursive;
+  /* font-family: 'Fredoka One', cursive; */
   /* font-family: 'Rubik Mono One', sans-serif; */
-  font-weight: bold;
+  font-family: 'Rowdies', cursive;
   filter: drop-shadow(0px 20px 10px #20bdff);
   background-color: white;
 
@@ -85,13 +84,10 @@
 
 .gradient-text-y {
   font-size: 12rem;
-  font-weight: bold;
   background-color: white;
   /* font-family: 'Rubik Mono One', sans-serif; */
+  font-family: 'Rowdies', cursive;
   filter: drop-shadow(0px 20px 10px orange);
-  font-family: 'Fredoka One', cursive;
-  padding: 7px 7px;
-
   background-image: linear-gradient(to right, #f37335, #f5af19);
   background-size: 100%;
   background-repeat: repeat;
