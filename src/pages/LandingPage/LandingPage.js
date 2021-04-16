@@ -55,12 +55,12 @@ const LandingPage = ({history}) => {
             </Row> */}
             <div className='py-3 py-md-2'>
                 <button onClick={handleClick} className='mode-btn'>
-                    <h6 className='mode-text' style={{color: 'black'}}>With AI</h6>
+                    With AI
                 </button>
             </div>
             <div className='py-3 py-md-2 justify-content-center'>
                 <button onClick={handleClick} className='mode-btn'>
-                    <h6 className='mode-text' style={{color: 'black'}}>With A Friend</h6>
+                    With A Friend
                 </button>
             </div>
             <br />

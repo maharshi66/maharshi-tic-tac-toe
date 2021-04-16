@@ -8,7 +8,7 @@ const Score = ({ curr, player1, player2, player1Mark, player2Mark, p1score, p2sc
                     <h5 className={curr === "0" ? 'current-player' : ''}>{player1} </h5>
                 </Col>
                 <Col className='text-center shadow pt-2'>
-                    <h5>{p1score} - {p2score}</h5>
+                    <h5 style={{fontWeight: 'bold'}}>{p1score} - {p2score}</h5>
                 </Col>
                 <Col className='text-center'>
                     <h5 className={curr === "1" ? 'current-player' : ''}>{player2}</h5>

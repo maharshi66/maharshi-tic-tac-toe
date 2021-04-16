@@ -22,7 +22,7 @@ const PickSidePage = ({history}) => {
             className='div-center justify-content-center'>
         
         <Row xs={1} md={1} className='pb-4'>
-            <h6>
+            <h6 style={{fontWeight: 'bold'}}>
                 Pick Your Side
             </h6>
         </Row>
@@ -55,7 +55,7 @@ const PickSidePage = ({history}) => {
         <br />
         <div className='py-3 py-md-2 justify-content-center align-items-center'>
                 <button onClick={handleClick} className='mode-btn'>
-                    <h6 style={{color: 'black'}}>Continue</h6>
+                    Continue
                 </button>
         </div>
     </Container>
