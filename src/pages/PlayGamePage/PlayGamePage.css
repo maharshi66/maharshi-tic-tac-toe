@@ -8,24 +8,83 @@
   width: 320px;
   height: 320px;
   display: grid;
+  grid-gap: 0px;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-  gap: 1rem;
-  background: lightgray;
+  background: white;
+  padding: 1rem 0.5rem;
 }
 
 .blocks {
-  border: none;
-  font-size: 3rem;
+  background-color: white;
+  font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
-  outline: none;
+  border-color: lightgray;
+}
+
+.block_0 {
+  border-top-left-radius: 25px;
+}
+
+.block_2 {
+  border-top-right-radius: 25px;
+}
+
+.block_6 {
+  border-bottom-left-radius: 25px;
+}
+
+.block_8 {
+  border-bottom-right-radius: 25px;
+}
+
+.block_0,
+.block_1,
+.block_2 {
+  border-top: none;
+}
+
+.block_0,
+.block_3,
+.block_6 {
+  border-left: none;
+}
+
+.block_6,
+.block_7,
+.block_8 {
+  border-bottom: none;
+}
+
+.block_2,
+.block_5,
+.block_8 {
+  border-right: none;
 }
 
 .X {
-  color: #0c0cf9;
+  font-size: 3rem;
+  font-family: 'Rubik Mono One', sans-serif;
+  background-color: white;
+  background-image: linear-gradient(45deg, #5433ff, #20bdff, #2ebf91);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 .O {
-  color: #ff8118;
+  font-size: 3rem;
+  background-color: white;
+  font-family: 'Rubik Mono One', sans-serif;
+  background-image: linear-gradient(to right, #f37335, #f5af19);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .info-wrapper {
@@ -36,16 +95,15 @@
 .round-corner {
   border-radius: 25px;
   background: lightgray;
-  border-style: dashed;
   border-color: black;
 }
 
 .current-player {
   text-decoration: none;
-  border-width: 5px 0 0;
+  /* border-width: 5px 0 0;
   border-style: solid;
   border-color: skyblue;
-  border-radius: 25px;
+  border-radius: 25px; */
   font-weight: bold;
 }
 

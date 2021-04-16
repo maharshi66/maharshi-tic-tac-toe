@@ -25,7 +25,8 @@ const Game = ({history, match}) => {
     const [yourScore, setYourScore] = useState(0);
     const [aiScore, setAiScore] = useState(0);
     const [winner, setWinner] = useState('');
-    
+    const [settingsClicked, setSettingsClicked] = useState(false);
+
     const mark = xIsNext === false ? 'X' : 'O';
     const winNoticed = calculateWinner(playHistory[stepNumber]);    
     
@@ -70,6 +71,7 @@ const Game = ({history, match}) => {
       setCurrentPlayer('0');
       setXisNext(parseInt(match.params.id) === 0 ? false : true)
       setWinner('');
+      setSettingsClicked(false);
     }
 
     const handleQuit = () => {
@@ -77,6 +79,10 @@ const Game = ({history, match}) => {
       setAiScore(0);
       handleReset();
       history.push("/");
+    }
+
+    const handleSettingsClicked = ( ) => {
+      setSettingsClicked(!settingsClicked);
     }
 
     return (
@@ -100,16 +106,29 @@ const Game = ({history, match}) => {
             p2score={aiScore}
              />
       </div>
-      <div>
+      <div className='rounded-corner'>
           <Board blocks={playHistory[stepNumber]} onClick={handleClick} />
       </div>
-      <div className='info-wrapper mt-5'>
-        <Button className='btn-md mr-4' variant='primary' onClick={handleReset}>
-          <i className='fas fa-sync-alt'></i> Reset
-        </Button>
-        <Button className='btn-md' variant='outline-danger' onClick={handleQuit}>
-          <i className='fas fa-times'></i> Quit
-        </Button>
+      <div className='info-wrapper mt-3'>
+        {
+          settingsClicked ? 
+         <>
+          <Button className='btn-sm mr-4' variant='primary' onClick={handleReset}>
+            <i className='fas fa-sync-alt'></i> Reset
+          </Button>
+          <Button className='btn-sm' variant='outline-danger' onClick={handleQuit}>
+            <i className='fas fa-times'></i> Quit
+          </Button>
+        </>
+        : null
+        }
+      </div>
+      <div className='settings-center'>
+          <button onClick={handleSettingsClicked} className='settings-btn'>
+              <span style={{color: 'blue'}}>
+                  <i className='fas fa-cog' />
+              </span>
+          </button>
       </div>
       </>
     );

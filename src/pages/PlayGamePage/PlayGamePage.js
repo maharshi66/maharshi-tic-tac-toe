@@ -4,7 +4,7 @@ import './PlayGamePage.css';
 
 const PlayGamePage = () => {
     return (
-        <div data-aos='zoom-in'
+        <div className='div-center' data-aos='zoom-in'
             data-aos-delay='600'>
             <Game />
         </div>

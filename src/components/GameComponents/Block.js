@@ -1,7 +1,7 @@
 import React from "react";
 
-const Block = ({ value, onClick }) => {
-  const style = value ? `blocks ${value}` : `blocks`;
+const Block = ({ value, onClick, border }) => {
+  const style = value ? `blocks ${border} ${value}` : `blocks ${border}`;
 
   return (
     <button className={style} onClick={onClick}>
