@@ -6,8 +6,8 @@ import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Particles from 'react-particles-js';
-import particlesConfig from './particles-config.js';
+// import Particles from 'react-particles-js';
+// import particlesConfig from './particles-config.js';
 
 function App() {
 
@@ -17,11 +17,11 @@ function App() {
 
   return (
     <Router>    
-      <Particles 
+      {/* <Particles 
         className='particles'
         params={
           particlesConfig
-        }/>
+        }/> */}
       <Route exact path='/' component={LandingPage} />
       <Route  path='/pick-side' component={PickSidePage} />
       <Route path='/play/:id' component={PlayGamePage} />

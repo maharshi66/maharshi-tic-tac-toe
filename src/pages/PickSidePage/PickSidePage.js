@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import XMark from '../../components/Marks/XMark';
 import OMark from '../../components/Marks/OMark';
-import { ButtonGroup, ToggleButton, Button, Row, Col, Container} from 'react-bootstrap';
+import { Row, Col, Container} from 'react-bootstrap';
 
 const PickSidePage = ({history}) => {
 
@@ -27,43 +27,37 @@ const PickSidePage = ({history}) => {
             </h6>
         </Row>
         
-        <Row className='shadow pb-3' xs={12} md={12}>
-            <Col>
+        <Row xs={2} md={2}>
+            <Col xs={6} md={6}>
                 <XMark />
             </Col>
-            <Col>
+            <Col xs={6} md={6}>
                 <OMark />
             </Col>
         </Row>
         <br />
         <Row xs={1} md={1}>
-                <ButtonGroup toggle>
-                {
-                    sides.map((side, idx) => (
-                        <ToggleButton
+            {
+                sides.map((side, idx) => (
+                    <Col xs={6} md={6}>
+                    <input className='radio-custom' 
                             key={idx}
-                            type="radio"
-                            className='btn-lg'
-                            variant="outline-primary"
-                            name="radio"
+                            type='radio'
                             value={side.value}
                             checked={sidePicked === side.value}
-                            onChange={(e) => setSidePicked(e.currentTarget.value)}
-                        >
-                        </ToggleButton>
-                    ))
-                }
-                </ButtonGroup>
+                            onChange={(e) => setSidePicked(e.currentTarget.value)}>       
+                    </input>
+                    </Col>
+                ))
+            }  
         </Row>
         
         <br />
-        <br />
-        
-        <Row xs={1} md={1}>
-        <Button className='rounded-pill' onClick={handleClick} variant='outline-success'>
-                    Let's Play!
-                </Button>                    
-        </Row>
+        <div className='py-3 py-md-2 justify-content-center align-items-center'>
+                <button onClick={handleClick} className='mode-btn'>
+                    <h6 style={{color: 'black'}}>Continue</h6>
+                </button>
+        </div>
     </Container>
     )
 }

@@ -6,10 +6,29 @@
   margin-right: auto;
   width: 50%;
 }
+
 .logo {
   display: flex;
   width: 171px;
   height: 180px;
+}
+
+.xo-logo-div {
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.mode-btn {
+  border-radius: 40px;
+  background: white;
+  box-shadow: 0px 2px 2px 2px;
+  border-style: none;
+  color: lightgray;
+  font-size: 30px;
+  width: 25%;
+}
+
+.mode-btn:hover {
+  background-color: #20bdff;
 }
 
 .settings-btn {
@@ -17,7 +36,7 @@
   background: white;
   box-shadow: 0px 2px 2px 2px;
   border-style: none;
-  color: darkgray;
+  color: lightgray;
   font-size: 30px;
   width: 10%;
 }
@@ -27,6 +46,63 @@
   padding: 3px 2px;
   box-shadow: 3px 0px;
   background: white;
+}
+
+.gradient-text-x {
+  font-size: 12rem;
+  /* font-family: 'Fredoka One', cursive; */
+  font-family: 'Rubik Mono One', sans-serif;
+  filter: drop-shadow(0 0.35rem 0.45rem #20bdff);
+  background-color: white;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(45deg, #5433ff, #20bdff, #2ebf91);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.gradient-text-y {
+  font-size: 12rem;
+  background-color: white;
+  font-family: 'Rubik Mono One', sans-serif;
+  filter: drop-shadow(0 0.35rem 0.45rem orange);
+  background-image: linear-gradient(to right, #f37335, #f5af19);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.radio-custom {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: 0.5em solid #20bdff;
+  background-color: #eee;
+}
+
+.radio-custom:hover {
+  background-color: #ccc;
+}
+
+@media screen and (max-width: 960px) {
+  .gradient-text-x {
+    font-size: 7rem;
+  }
+
+  .gradient-text-y {
+    font-size: 7rem;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -48,5 +124,15 @@
     color: darkgray;
     font-size: 30px;
     width: 20%;
+  }
+
+  .mode-btn {
+    border-radius: 40px;
+    background: white;
+    box-shadow: 0px 2px 2px 2px;
+    border-style: none;
+    color: lightgray;
+    font-size: 30px;
+    width: 80%;
   }
 }

@@ -1,15 +1,14 @@
-import React, { useState } from 'react'
-import { Button, ButtonGroup, ToggleButton, Row, Col, Container} from 'react-bootstrap';
+// import React, { useState } from 'react'
+import React from 'react';
+import { Row, Col, Container} from 'react-bootstrap';
 import './LandingPage.css';
-import XMark from '../../components/Marks/XMark';
-import OMark from '../../components/Marks/OMark';
 
 const LandingPage = ({history}) => {
-    const [playMode, setPlayMode] = useState('1');
-    const playingModes = [
-        { name: 'With AI', value: '1' },
-        { name: 'With A Friend', value: '2' },
-    ];
+    // const [playMode, setPlayMode] = useState('1');
+    // const playingModes = [
+    //     { name: 'With AI', value: '1' },
+    //     { name: 'With A Friend', value: '2' },
+    // ];
 
     const handleClick = () => {
         history.push('/pick-side');
@@ -21,22 +20,22 @@ const LandingPage = ({history}) => {
         data-aos="fade-left"
         data-aos-delay="500"
         className='div-center justify-content-center'>
-            <Row className='pb-2 shadow' xs={12} md={12}>
-                <Col>
-                    <XMark />
-                </Col>
-                <Col>
-                    <OMark />
+            <Row>
+                <Col xs={12} md={12}>
+                    <h1 >
+                        <span className='gradient-text-x'>X</span>
+                        <span className='gradient-text-y'>O</span>
+                    </h1>
                 </Col>
             </Row>
             <br />
-            <Row xs={1} md={1} className='pb-3'>
-                <h6>
-                    Choose Playing Mode
+            <Row xs={1} md={1}  className='pb-1'>
+                <h6 style={{fontWeight: 'bold'}}>
+                    Choose your play mode
                 </h6>
             </Row>
-            <Row xs={1} md={1}>
-                <ButtonGroup toggle>
+            {/* <Row xs={1} md={1}>
+                /* <ButtonGroup toggle>
                 {
                     playingModes.map((mode, idx) => (
                         <ToggleButton
@@ -52,21 +51,24 @@ const LandingPage = ({history}) => {
                         </ToggleButton>
                     ))
                 }
-                </ButtonGroup>
-            </Row>
-            
+                </ButtonGroup> 
+            </Row> */}
+            <div className='py-3 py-md-2'>
+                <button onClick={handleClick} className='mode-btn'>
+                    <h6 style={{color: 'black'}}>With AI</h6>
+                </button>
+            </div>
+            <div className='py-3 py-md-2 justify-content-center'>
+                <button onClick={handleClick} className='mode-btn'>
+                    <h6 style={{color: 'black'}}>With A Friend</h6>
+                </button>
+            </div>
             <br />
-            <Row xs={1} md={1}>
-                    <Button 
-                        className='rounded-pill' 
-                        onClick={handleClick} 
-                        variant='outline-success'>
-                        Continue
-                    </Button>                    
-            </Row>
-            <div className='py-3 py-md-2 justify-content-center align-items-center'>
+            <div className='py-3 py-md-2'>
                 <button className='settings-btn'>
-                    <i className='fas fa-cog' />
+                    <span style={{color: 'blue'}}>
+                        <i className='fas fa-cog' />
+                    </span>
                 </button>
             </div>
         </Container>
